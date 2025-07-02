@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Home page</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .maindiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/netflixbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    
+    
+  }
+  /* div {
+    border: 2px solid white;
+  } */
+  .ope_div {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+  }
+  .navdiv {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    z-index: 10;
+    top: 5vh;
+   
+    
+  }
+  .navdiv nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  button {
+    text-wrap: nowrap;
+    border: 1px solid white;
+    padding: 10px 25px ;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+  }
+  
+  #b1 {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 25px ;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+  .b2 {
+    color: rgb(255, 255, 255);
+    background-color: red;
+    border: 0px;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    
+  }
+  h3 {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  #b3 {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 25px ;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+
+  }
+  #b4 {
+    color: rgb(255, 255, 255);
+    background-color: red;
+    font-size: 30px;
+    border: 0px;
+  }
+  #centertext {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+    
+    
+  }
+  #centertext>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+</style>
+<body>
+  <div class="maindiv">
+    <div class="navdiv">
+    <nav>
+      <img width="140" src="assets/netflix.svg" alt="">
+      <div>
+        <select name="dropdown" id="b1">
+          <option value="English" selected>English</option>
+          <option value="Hindi">हिन्दी</option>
+        </select>
+        <button class="b2"><a style="color: white; text-decoration: none;" href="Sign_in.html">Sign In</a></button>
+      </div>
+    </nav>
+    <div id="centertext">
+      <h1>Unlimited movies,TV <br> shows and more</h1>
+      <h3>Starts at ₹149. Cancel at any time.</h3>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div>
+       
+        <input id="b3" type="email" placeholder="Email address">
+        <button id="b4">Get Started  > </button>
+      </div>
+
+    </div>
+    </div>
+    <div class="ope_div"></div>
+  </div>
+  
+</body>
+</html>
